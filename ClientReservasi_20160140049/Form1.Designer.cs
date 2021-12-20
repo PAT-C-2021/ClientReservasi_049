@@ -182,7 +182,7 @@ namespace ClientReservasi_20160140049
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 612);
+            this.ClientSize = new System.Drawing.Size(904, 611);
             this.Controls.Add(this.dtPemesanan);
             this.Controls.Add(this.textBoxIDLokasi);
             this.Controls.Add(this.textBoxJumlah);

@@ -67,8 +67,9 @@ namespace ClientReservasi_20160140049
         }
         public void TampilData()
         {
-            var daftar = service.Pemesanan1();
-            dtPemesanan.DataSource = daftar;
+            var List = service.Pemesanan1();
+            dtPemesanan.DataSource = List;
+            //dtPemesanan.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
         }
         public void Clear()
         {
