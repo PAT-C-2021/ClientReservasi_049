@@ -41,6 +41,7 @@ namespace ClientReservasi_20160140049
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.dtRegister = new System.Windows.Forms.DataGridView();
+            this.btLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtRegister)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,11 +153,22 @@ namespace ClientReservasi_20160140049
             this.dtRegister.TabIndex = 28;
             this.dtRegister.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtRegister_CellClick);
             // 
+            // btLogin
+            // 
+            this.btLogin.Location = new System.Drawing.Point(735, 339);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(100, 35);
+            this.btLogin.TabIndex = 29;
+            this.btLogin.Text = "Login";
+            this.btLogin.UseVisualStyleBackColor = true;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 634);
+            this.Controls.Add(this.btLogin);
             this.Controls.Add(this.dtRegister);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.comboBoxKategori);
@@ -191,5 +203,6 @@ namespace ClientReservasi_20160140049
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.DataGridView dtRegister;
+        private System.Windows.Forms.Button btLogin;
     }
 }

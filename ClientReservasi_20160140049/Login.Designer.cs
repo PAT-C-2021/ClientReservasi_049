@@ -34,6 +34,7 @@ namespace ClientReservasi_20160140049
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.btLogin = new System.Windows.Forms.Button();
+            this.btRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +66,7 @@ namespace ClientReservasi_20160140049
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(197, 176);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(222, 26);
             this.textBoxPassword.TabIndex = 3;
             // 
@@ -78,11 +80,22 @@ namespace ClientReservasi_20160140049
             this.btLogin.UseVisualStyleBackColor = true;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
+            // btRegister
+            // 
+            this.btRegister.Location = new System.Drawing.Point(197, 230);
+            this.btRegister.Name = "btRegister";
+            this.btRegister.Size = new System.Drawing.Size(100, 39);
+            this.btRegister.TabIndex = 5;
+            this.btRegister.Text = "Register";
+            this.btRegister.UseVisualStyleBackColor = true;
+            this.btRegister.Click += new System.EventHandler(this.btRegister_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 325);
+            this.Controls.Add(this.btRegister);
             this.Controls.Add(this.btLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
@@ -103,5 +116,6 @@ namespace ClientReservasi_20160140049
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button btLogin;
+        private System.Windows.Forms.Button btRegister;
     }
 }

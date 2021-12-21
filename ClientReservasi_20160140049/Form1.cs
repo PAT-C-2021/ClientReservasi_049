@@ -113,5 +113,24 @@ namespace ClientReservasi_20160140049
             btSave.Enabled = false;
             textBoxID.Enabled = false;
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void registerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register regis = new Register();
+            regis.Show();
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

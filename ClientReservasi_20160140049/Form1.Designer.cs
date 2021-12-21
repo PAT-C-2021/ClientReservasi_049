@@ -44,13 +44,17 @@ namespace ClientReservasi_20160140049
             this.textBoxJumlah = new System.Windows.Forms.TextBox();
             this.textBoxIDLokasi = new System.Windows.Forms.TextBox();
             this.dtPemesanan = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 44);
+            this.label1.Location = new System.Drawing.Point(15, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 0;
@@ -59,7 +63,7 @@ namespace ClientReservasi_20160140049
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 101);
+            this.label2.Location = new System.Drawing.Point(15, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 1;
@@ -68,7 +72,7 @@ namespace ClientReservasi_20160140049
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 161);
+            this.label3.Location = new System.Drawing.Point(15, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 2;
@@ -77,7 +81,7 @@ namespace ClientReservasi_20160140049
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 222);
+            this.label4.Location = new System.Drawing.Point(15, 222);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 20);
             this.label4.TabIndex = 3;
@@ -86,7 +90,7 @@ namespace ClientReservasi_20160140049
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 277);
+            this.label5.Location = new System.Drawing.Point(15, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 20);
             this.label5.TabIndex = 4;
@@ -134,35 +138,35 @@ namespace ClientReservasi_20160140049
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(202, 41);
+            this.textBoxID.Location = new System.Drawing.Point(193, 41);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(308, 26);
             this.textBoxID.TabIndex = 9;
             // 
             // textBoxNama
             // 
-            this.textBoxNama.Location = new System.Drawing.Point(202, 98);
+            this.textBoxNama.Location = new System.Drawing.Point(193, 98);
             this.textBoxNama.Name = "textBoxNama";
             this.textBoxNama.Size = new System.Drawing.Size(308, 26);
             this.textBoxNama.TabIndex = 10;
             // 
             // textBoxNoTlf
             // 
-            this.textBoxNoTlf.Location = new System.Drawing.Point(202, 158);
+            this.textBoxNoTlf.Location = new System.Drawing.Point(193, 158);
             this.textBoxNoTlf.Name = "textBoxNoTlf";
             this.textBoxNoTlf.Size = new System.Drawing.Size(308, 26);
             this.textBoxNoTlf.TabIndex = 11;
             // 
             // textBoxJumlah
             // 
-            this.textBoxJumlah.Location = new System.Drawing.Point(202, 219);
+            this.textBoxJumlah.Location = new System.Drawing.Point(193, 219);
             this.textBoxJumlah.Name = "textBoxJumlah";
             this.textBoxJumlah.Size = new System.Drawing.Size(308, 26);
             this.textBoxJumlah.TabIndex = 12;
             // 
             // textBoxIDLokasi
             // 
-            this.textBoxIDLokasi.Location = new System.Drawing.Point(202, 280);
+            this.textBoxIDLokasi.Location = new System.Drawing.Point(193, 280);
             this.textBoxIDLokasi.Name = "textBoxIDLokasi";
             this.textBoxIDLokasi.Size = new System.Drawing.Size(308, 26);
             this.textBoxIDLokasi.TabIndex = 13;
@@ -177,6 +181,34 @@ namespace ClientReservasi_20160140049
             this.dtPemesanan.Size = new System.Drawing.Size(847, 231);
             this.dtPemesanan.TabIndex = 14;
             this.dtPemesanan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtPemesanan_CellContentClick);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registerToolStripMenuItem,
+            this.loginToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(904, 33);
+            this.menuStrip1.TabIndex = 15;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // registerToolStripMenuItem
+            // 
+            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
+            this.registerToolStripMenuItem.Text = "Register";
+            this.registerToolStripMenuItem.Click += new System.EventHandler(this.registerToolStripMenuItem_Click);
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(72, 29);
+            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -198,10 +230,14 @@ namespace ClientReservasi_20160140049
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +260,9 @@ namespace ClientReservasi_20160140049
         private System.Windows.Forms.TextBox textBoxJumlah;
         private System.Windows.Forms.TextBox textBoxIDLokasi;
         private System.Windows.Forms.DataGridView dtPemesanan;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem registerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
     }
 }
 

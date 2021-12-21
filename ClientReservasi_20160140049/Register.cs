@@ -20,6 +20,9 @@ namespace ClientReservasi_20160140049
             InitializeComponent();
             TampilData();
 
+            comboBoxKategori.Items.Add("Admin");
+            comboBoxKategori.Items.Add("Resepsionis");
+
             textBoxID.Visible = false;
             btDelete.Enabled = false;
             btUpdate.Enabled = false;
@@ -51,7 +54,24 @@ namespace ClientReservasi_20160140049
 
         private void btUpdate_Click(object sender, EventArgs e)
         {
+            string username = textBoxUsername.Text;
+            string password = textBoxPassword.Text;
+            string kategori = comboBoxKategori.Text;
 
+            int id = Convert.ToInt32(textBoxID.Text);
+
+            string a = service.UpdateRegister(username, password, kategori, id);
+
+            if (textBoxUsername.Text == "" || textBoxPassword.Text == "" || comboBoxKategori.Text == "")
+            {
+                MessageBox.Show("Semua data wajib diisi !!");
+            }
+            else
+            {
+                MessageBox.Show(a);
+                Refresh();
+                TampilData();
+            }
         }
         public void TampilData()
         {
@@ -75,6 +95,7 @@ namespace ClientReservasi_20160140049
 
 
         }
+
 
         private void btDelete_Click(object sender, EventArgs e)
         {
@@ -105,5 +126,13 @@ namespace ClientReservasi_20160140049
 
             btSave.Enabled = false;
         }
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
     }
 }

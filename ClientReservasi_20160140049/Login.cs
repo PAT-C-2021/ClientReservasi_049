@@ -51,5 +51,12 @@ namespace ClientReservasi_20160140049
 
             }
         }
+
+        private void btRegister_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register regis = new Register();
+            regis.Show();
+        }
     }
 }
