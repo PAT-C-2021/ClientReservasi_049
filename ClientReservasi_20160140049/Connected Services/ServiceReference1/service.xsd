@@ -63,6 +63,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="DataRegist">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataRegistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiceReservasi" minOccurs="0" name="DataRegistResult" nillable="true" type="q1:ArrayOfDataRegister" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="pemesanan">
     <xs:complexType>
       <xs:sequence>
@@ -119,7 +131,7 @@
   <xs:element name="ReviewLokasiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiceReservasi" minOccurs="0" name="ReviewLokasiResult" nillable="true" type="q1:ArrayOfCekLokasi" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiceReservasi" minOccurs="0" name="ReviewLokasiResult" nillable="true" type="q2:ArrayOfCekLokasi" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -131,7 +143,7 @@
   <xs:element name="DetailLokasiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiceReservasi" minOccurs="0" name="DetailLokasiResult" nillable="true" type="q2:ArrayOfDetailLokasi" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceReservasi" minOccurs="0" name="DetailLokasiResult" nillable="true" type="q3:ArrayOfDetailLokasi" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -143,7 +155,7 @@
   <xs:element name="PemesananResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceReservasi" minOccurs="0" name="PemesananResult" nillable="true" type="q3:ArrayOfPemesanan" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServiceReservasi" minOccurs="0" name="PemesananResult" nillable="true" type="q4:ArrayOfPemesanan" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

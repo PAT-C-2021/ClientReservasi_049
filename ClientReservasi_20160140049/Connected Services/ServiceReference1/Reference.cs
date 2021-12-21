@@ -39,6 +39,12 @@ namespace ClientReservasi_20160140049.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteRegister", ReplyAction="http://tempuri.org/IService1/DeleteRegisterResponse")]
         System.Threading.Tasks.Task<string> DeleteRegisterAsync(string username);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DataRegist", ReplyAction="http://tempuri.org/IService1/DataRegistResponse")]
+        ServiceReservasi.DataRegister[] DataRegist();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DataRegist", ReplyAction="http://tempuri.org/IService1/DataRegistResponse")]
+        System.Threading.Tasks.Task<ServiceReservasi.DataRegister[]> DataRegistAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/pemesanan", ReplyAction="http://tempuri.org/IService1/pemesananResponse")]
         string pemesanan(string IDPemesanan, string NamaCustomer, string NoTelpon, int JumlahPemesanan, string IDLokasi);
         
@@ -161,6 +167,14 @@ namespace ClientReservasi_20160140049.ServiceReference1 {
         
         public System.Threading.Tasks.Task<string> DeleteRegisterAsync(string username) {
             return base.Channel.DeleteRegisterAsync(username);
+        }
+        
+        public ServiceReservasi.DataRegister[] DataRegist() {
+            return base.Channel.DataRegist();
+        }
+        
+        public System.Threading.Tasks.Task<ServiceReservasi.DataRegister[]> DataRegistAsync() {
+            return base.Channel.DataRegistAsync();
         }
         
         public string pemesanan(string IDPemesanan, string NamaCustomer, string NoTelpon, int JumlahPemesanan, string IDLokasi) {
